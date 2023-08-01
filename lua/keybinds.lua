@@ -16,6 +16,18 @@ vim.keymap.set("i", "<C-BS>", "<C-o>diw", { desc = "Delete word at a time insert
 vim.keymap.set("n", "W", "b", { desc = "Jump back a word"})
 
 -- Window management 
+vim.keymap.set("n", "<leader>wv", ":vsp<CR>", { desc = "Split window verical"})
+vim.keymap.set("n", "<leader>wh", ":sp<CR>", { desc = "Split window horisontal"})
+vim.keymap.set("n", "<leader>we", "<C-W>=", { desc = "Make windows equal"})
+vim.keymap.set("n", "<leader>wf", "<C-W>|<C-W>_", { desc = "Fullscreen current window"})
+vim.keymap.set("n", "<C-A-h>", ":vertical resize -5<CR>", { desc = "- Vertical size"})
+vim.keymap.set("n", "<C-A-j>", ":resize +5<CR>", { desc = "+Horisontal size"})
+vim.keymap.set("n", "<C-A-k>", ":resize -5<CR>", { desc = "-Horisontal size"})
+vim.keymap.set("n", "<C-A-l>", ":vertical resize +5<CR>", { desc = "+Vertical size"})
+vim.keymap.set("n", "<C-h>", "<C-W><C-H>", { desc = "Move to right window"})
+vim.keymap.set("n", "<C-j>", "<C-W><C-J>", { desc = "Move to down window"})
+vim.keymap.set("n", "<C-k>", "<C-W><C-K>", { desc = "Move to up window"})
+vim.keymap.set("n", "<C-l>", "<C-W><C-L>", { desc = "Move to left window"})
 
 -- Keybinds for debugging
 vim.keymap.set('n', '<leader>db', function() require('dap').toggle_breakpoint() end)
