@@ -18,5 +18,13 @@ wk.register({
 })
 
 -- Telescope edits
+wk.register({
+    ["<leader>f"]     =   {name = "+file"},
+    ["<leader>ff"]  =   {"<cmd>Telescope find_files<cr>", "Fuzzy find File"},
+    ["<leader>fr"]  =   {"<cmd>Telescope oldfiles<cr>", "Fuzzy find Recent File"},
+    ["<leader>fl"]  =   {"<cmd>Telescope live_grep<cr>", "fuzzy find with grep"},
+    ["<leader>fb"]  =   {"<cmd>Telescope buffers<cr>", "Fuzzy find open File"},
+    ["<leader>fg"]  =   {"<cmd>Telescope git_commits<cr>", "Fuzzy find git commits"},
+})
 
 vim.cmd('map <Leader>lf :lua vim.lsp.buf.format({ timeout_ms = 2000 })<CR>')
