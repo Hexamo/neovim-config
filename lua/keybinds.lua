@@ -13,6 +13,7 @@ vim.keymap.set("n", "<leader><space>", ":let @/=''<CR>", { desc = "Cancel search
 vim.keymap.set("x", "K", ":move '<-2<CR>gv-gv", { desc = "better indent"})
 vim.keymap.set("x", "J", ":move '>+1<CR>gv-gv", { desc = "better indent"})
 vim.keymap.set("i", "<C-BS>", "<C-o>diw", { desc = "Delete word at a time insert"})
+vim.keymap.set("n", "W", "b", { desc = "Jump back a word"})
 
 -- Window management 
 
