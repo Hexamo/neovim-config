@@ -1,13 +1,9 @@
 local wk = require("which-key")
 
 -- General Keybinds
-wk.register({
-    ["jk"] = { "<ESC>", "Escapes out of insert mode" },
-}, { mode = "i" })
-
-wk.register({
-    ["jk"] = { "<C-\\><C-n>", "Escapes out of insert mode" }
-}, { mode = "t" })
+vim.keymap.set("i", "jk", "<ESC>", { desc = "Exit out of insert mode"})
+vim.keymap.set("n", "n", "nzz", { desc = "Center search results"})
+vim.keymap.set("n", "N", "Nzz", { desc = "Center search results"})
 
 
 -- Keybinds for debugging
