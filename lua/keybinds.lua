@@ -18,8 +18,6 @@ wk.register({
     ["<leader>hc"]  =   {":Git commit | startinsert<CR>","Commits what is in buffer"},
 })
 
-
- 
 -- Telescope edits
 wk.register({
     ["<leader>f"]     =   {name = "+file"},
