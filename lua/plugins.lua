@@ -1,7 +1,9 @@
 return {
+    -- Dap configuraion
     {
         "mfussenegger/nvim-dap"
     },
+    -- Dap configuration for python
     {
         "mfussenegger/nvim-dap-python",
         ft = "python",
@@ -13,10 +15,8 @@ return {
             local path = "~/.local/share/nvim/mason/packages/debugpy/venv/bin/python"
             require("dap-python").setup(path)
         end,
-        --config = function()
-        --    require("plugin_config.nvim-dap-python")
-        --end,
     },
+    -- UI for DAP 
     {
         "rcarriga/nvim-dap-ui",
         dependencies = "mfussenegger/nvim-dap",
@@ -24,6 +24,13 @@ return {
             require("plugin_config.nvim-dap-ui")
         end,
     },
+    -- shows what keys you are using
+    {
+		"folke/which-key.nvim",
+		config = function()
+			require("plugin_config.which-key")
+		end,
+	},
 	-- Theme, Nightfox
 	{
 	"EdenEast/nightfox.nvim",
