@@ -6,4 +6,6 @@ This setup is loosely based on zanderhavgaard's steup, found here: [Link](https:
 - [ ] break up lsp.lua into multiple files.
 - [ ] break up plugins into multiple files.
 - [ ] separate LSP and mason related stuff into own folder.
-- [ ] rethink if telescope needs settings. 
+- [ ] rethink if telescope needs settings.
+- [ ] better keybinds
+- [ ] Keybinds for debugging
