@@ -4,7 +4,17 @@ local wk = require("which-key")
 vim.keymap.set("i", "jk", "<ESC>", { desc = "Exit out of insert mode"})
 vim.keymap.set("n", "n", "nzz", { desc = "Center search results"})
 vim.keymap.set("n", "N", "Nzz", { desc = "Center search results"})
+vim.keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { desc = "Visual line wraps up", expr = true})
+vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { desc = "Visual line wraps down", expr = true})
+vim.keymap.set("v", "<", "<gv", { desc = "Better indent"})
+vim.keymap.set("v", ">", ">gv", { desc = "Better indent"})
+vim.keymap.set("v", "p", "_dp", { desc = "Paste over selected text"})
+vim.keymap.set("n", "<ESC>", ":nohlsearch<Bar>:echo<CR>", { desc = "Cancel search highlight"})
+vim.keymap.set("x", "K", ":move '<-2<CR>gv-gv", { desc = "better indent"})
+vim.keymap.set("x", "J", ":move '>+1<CR>gv-gv", { desc = "better indent"})
+vim.keymap.set("i", "<C-BS>", "<C-o>diw", { desc = "Delete word at a time insert"})
 
+-- Window management 
 
 -- Keybinds for debugging
 vim.keymap.set('n', '<leader>db', function() require('dap').toggle_breakpoint() end)
