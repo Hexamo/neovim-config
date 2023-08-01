@@ -15,8 +15,11 @@ wk.register({
     ["<leader>hp"]  =   {":Gitsigns preview_hunk<CR>","Show current hunk"},
     ["<leader>hs"]  =   {":Gitsigns stage_hunk<CR>","Stage current hunk"},
     ["<leader>hr"]  =   {":Gitsigns reset_hunk<CR>","Resets current hunk"},
+    ["<leader>hc"]  =   {":Git commit | startinsert<CR>","Commits what is in buffer"},
 })
 
+
+ 
 -- Telescope edits
 wk.register({
     ["<leader>f"]     =   {name = "+file"},
