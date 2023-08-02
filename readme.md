@@ -12,4 +12,5 @@ This setup is loosely based on zanderhavgaard's steup, found here: [Link](https:
 - [ ] Implement keymap for debugging
 - [x] implement keymap for git
 - [ ] implement keymap for telescope
+- [ ] implement keymap for NvimTree
 - [ ] implement keymap for LSP
