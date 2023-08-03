@@ -16,7 +16,15 @@ return {
             require("dap-python").setup(path)
         end,
     },
-    -- UI for DAP 
+    {
+        "cuducos/yaml.nvim",
+        ft = { "yaml" }, -- optional
+        dependencies = {
+            "nvim-treesitter/nvim-treesitter",
+            "nvim-telescope/telescope.nvim", -- optional
+        },
+    },
+    -- UI for DAP
     {
         "rcarriga/nvim-dap-ui",
         dependencies = "mfussenegger/nvim-dap",
