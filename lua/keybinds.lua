@@ -40,7 +40,7 @@ vim.keymap.set('n', '<leader>dpr', function() require('dap-python').test_method(
 
 -- Nvim Tree keybinds
 wk.register({ ["<leader>t"] = { name = "+Tree" }, })
-vim.keymap.set("n", "<leader>to", ":NvimTreeOpen<CR>", { desc = "Opens up Nvim Tree" })
+vim.keymap.set("n", "<leader>to", ":NvimTreeToggle<CR>", { desc = "Opens up Nvim Tree" })
 vim.keymap.set("n", "<leader>tc", ":NvimTreeClose<CR>", { desc = "Closes Nvim Tree" })
 vim.keymap.set("n", "<leader>tf", ":NvimTreeFocus<CR>", { desc = "Focus on Nvim Tree" })
 
