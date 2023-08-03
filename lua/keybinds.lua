@@ -30,10 +30,12 @@ vim.keymap.set("n", "<C-k>", "<C-W><C-K>", { desc = "Move to up window"})
 vim.keymap.set("n", "<C-l>", "<C-W><C-L>", { desc = "Move to left window"})
 
 -- Keybinds for debugging
-vim.keymap.set('n', '<leader>db', function() require('dap').toggle_breakpoint() end)
+wk.register({ ["<leader>d"] = { name = "+Debug" }, })
+vim.keymap.set('n', '<leader>db', function() require('dap').toggle_breakpoint() end, { desc = "Toggle breakpoint"})
 
 -- Keybinds for python debugging
-vim.keymap.set('n', '<leader>dpr', function() require('dap-python').test_method() end)
+wk.register({ ["<leader>dp"] = { name = "+PythonDebug" }, })
+vim.keymap.set('n', '<leader>dpr', function() require('dap-python').test_method() end, {desc = "Start Python debugger"})
 
 
 -- Keybinds for git
