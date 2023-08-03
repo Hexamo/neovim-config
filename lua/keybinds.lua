@@ -37,6 +37,11 @@ vim.keymap.set('n', '<leader>db', function() require('dap').toggle_breakpoint() 
 wk.register({ ["<leader>dp"] = { name = "+PythonDebug" }, })
 vim.keymap.set('n', '<leader>dpr', function() require('dap-python').test_method() end, {desc = "Start Python debugger"})
 
+-- Nvim Tree keybinds
+wk.register({ ["<leader>t"] = { name = "+Tree" }, })
+vim.keymap.set("n", "<leader>to", ":NvimTreeOpen<CR>", { desc = "Opens up Nvim Tree" })
+vim.keymap.set("n", "<leader>tc", ":NvimTreeClose<CR>", { desc = "Closes Nvim Tree" })
+vim.keymap.set("n", "<leader>tf", ":NvimTreeFocus<CR>", { desc = "Focus on Nvim Tree" })
 
 -- Keybinds for git
 -- Git hunk selection
