@@ -16,6 +16,7 @@ vim.keymap.set("i", "<C-BS>", "<C-o>diw", { desc = "Delete word at a time insert
 vim.keymap.set("n", "W", "b", { desc = "Jump back a word"})
 
 -- Window management 
+wk.register({ ["<leader>w"] = { name = "+Window" }, })
 vim.keymap.set("n", "<leader>wv", ":vsp<CR>", { desc = "Split window verical"})
 vim.keymap.set("n", "<leader>wh", ":sp<CR>", { desc = "Split window horisontal"})
 vim.keymap.set("n", "<leader>we", "<C-W>=", { desc = "Make windows equal"})
