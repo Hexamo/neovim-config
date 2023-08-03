@@ -1,6 +1,6 @@
 local wk = require("which-key")
 
--- General Keybinds
+-- General No leader keybinds 
 vim.keymap.set("i", "jk", "<ESC>", { desc = "Exit out of insert mode"})
 vim.keymap.set("n", "n", "nzz", { desc = "Center search results"})
 vim.keymap.set("n", "N", "Nzz", { desc = "Center search results"})
@@ -44,7 +44,6 @@ vim.keymap.set("n", "<leader>tc", ":NvimTreeClose<CR>", { desc = "Closes Nvim Tr
 vim.keymap.set("n", "<leader>tf", ":NvimTreeFocus<CR>", { desc = "Focus on Nvim Tree" })
 
 -- Keybinds for git
--- Git hunk selection
 wk.register({ ["<leader>h"] = { name = "+Git" }, })
 vim.keymap.set("n", "<leader>hn", ":Gitsigns next_hunk<CR>", { desc = "Next hunk of git code" })
 vim.keymap.set("n", "<leader>hN", ":Gitsigns prev_hunk<CR>", { desc = "Previous hunk of git code" })
