@@ -16,4 +16,4 @@ require("lazy").setup("plugins")
 require("lsp")
 require("keybinds")
 
-vim.cmd("colorscheme nightfox")
+vim.cmd("colorscheme rose-pine")
