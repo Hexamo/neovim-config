@@ -60,6 +60,7 @@ vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<CR>", { desc = "Fuzzy
 vim.keymap.set("n", "<leader>fl", "<cmd>Telescope live_grep<CR>", { desc = "fuzzy find with grep" })
 vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = "Fuzzy find open File" })
 vim.keymap.set("n", "<leader>fg", "<cmd>Telescope git_commits<CR>", { desc = "Fuzzy find git commits" })
+vim.keymap.set("n", "<leader>fc", "<cmd>Telescope git_status<CR>", { desc = "Fuzzsy finder for git changes" })
 
 -- LSP Keybinds
 wk.register({["<leader>l"] = { name = "+LSP" },})
