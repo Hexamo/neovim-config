@@ -51,6 +51,12 @@ return {
             require("plugin_config.nightfox")
         end,
     },
+    {
+        "rose-pine/neovim", name = "rose-pine",
+        config = function()
+            require("plugin_config.rose-pine")
+        end,
+    },
     -- Sensible default settings
     {
         "tpope/vim-sensible",
