@@ -13,6 +13,7 @@ require("indent_blankline").setup({
 		"lspinfo",
 		"TelescopePrompt",
 		"TelescopeResults",
+        "yaml",
 	},
 	buftype_exclude = { "terminal" },
 	show_trailing_blankline_indent = true,
