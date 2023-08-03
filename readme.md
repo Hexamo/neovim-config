@@ -8,7 +8,7 @@ This setup is loosely based on zanderhavgaard's steup, found here: [Link](https:
 - [ ] separate LSP and mason related stuff into own folder.
 - [ ] rethink if telescope needs settings.
 - [x] Implement which-key
-- [ ] Implement keymap for window management
+- [x] Implement keymap for window management
 - [ ] Implement keymap for debugging
 - [x] implement keymap for git
 - [ ] implement keymap for telescope
