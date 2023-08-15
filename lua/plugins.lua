@@ -52,6 +52,12 @@ return {
         end,
     },
     {
+        "jinh0/eyeliner.nvim",
+        config = function()
+            require("plugin_config.eyeliner")
+        end,
+    },
+    {
         "rose-pine/neovim", name = "rose-pine",
         config = function()
             require("plugin_config.rose-pine")
