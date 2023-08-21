@@ -16,14 +16,6 @@ return {
             require("dap-python").setup(path)
         end,
     },
-    {
-        "cuducos/yaml.nvim",
-        ft = { "yaml" }, -- optional
-        dependencies = {
-            "nvim-treesitter/nvim-treesitter",
-            "nvim-telescope/telescope.nvim", -- optional
-        },
-    },
     -- UI for DAP
     {
         "rcarriga/nvim-dap-ui",
@@ -49,6 +41,12 @@ return {
         "EdenEast/nightfox.nvim",
         config = function()
             require("plugin_config.nightfox")
+        end,
+    },
+    {
+        "jinh0/eyeliner.nvim",
+        config = function()
+            require("plugin_config.eyeliner")
         end,
     },
     {
