@@ -7,5 +7,10 @@ This setup is loosely based on zanderhavgaard's steup, found here: [Link](https:
 - [ ] break up plugins into multiple files.
 - [ ] separate LSP and mason related stuff into own folder.
 - [ ] rethink if telescope needs settings.
-- [ ] better keybinds
-- [ ] Keybinds for debugging
+- [x] Implement which-key
+- [x] Implement keymap for window management
+- [ ] Implement keymap for debugging
+- [x] implement keymap for git
+- [ ] implement keymap for telescope
+- [ ] implement keymap for NvimTree
+- [ ] implement keymap for LSP
