@@ -185,5 +185,11 @@ return {
             require("plugin_config.mason-null-ls")
         end,
     },
+    {"ThePrimeagen/vim-be-good"},
+    {
+        "m4xshen/hardtime.nvim",
+        dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
+        opts = {}
+    },
 
 }
