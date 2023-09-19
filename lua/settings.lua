@@ -1,5 +1,9 @@
 --local vim = vim
 
+-- Timeout for whichkey
+vim.o.timeout = true
+vim.o.timeoutlen = 300
+
 -- Do not hide code
 vim.o.conceallevel = 0
 

@@ -10,10 +10,10 @@ vim.opt.termguicolors = true
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
-require("settings")
 require("lazy_bootstrap")
-require("lazy").setup("plugins")
-require("lsp")
+require("settings")
 require("keybinds")
+require("lsptest")
+--require("lazy").setup("plugins")
+--require("lsp")
 
-vim.cmd("colorscheme rose-pine")
