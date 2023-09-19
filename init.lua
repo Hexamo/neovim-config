@@ -10,10 +10,12 @@ vim.opt.termguicolors = true
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
+
+
 require("lazy_bootstrap")
 require("settings")
 require("keybinds")
-require("lsptest")
+--require("lsptest")
 --require("lazy").setup("plugins")
 --require("lsp")
 
