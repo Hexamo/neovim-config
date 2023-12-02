@@ -62,6 +62,12 @@ vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = "Fuzzy 
 vim.keymap.set("n", "<leader>fg", "<cmd>Telescope git_commits<CR>", { desc = "Fuzzy find git commits" })
 vim.keymap.set("n", "<leader>fc", "<cmd>Telescope git_status<CR>", { desc = "Fuzzsy finder for git changes" })
 
+wk.register({["<leader>b"] = { name = "+Bufferline" },})
+vim.keymap.set("n", "<leader>bp", "<cmd>BufferLinePick<CR>", { desc = "Pick by letter" })
+vim.keymap.set("n", "<leader>bc", "<cmd>BufferLinePickClose<CR>", { desc = "Close by letter" })
+vim.keymap.set("n", "<leader>bl", "<cmd>BufferLineCycleNext<CR>", { desc = "Cycle next buffer" })
+vim.keymap.set("n", "<leader>bh", "<cmd>BufferLineCyclePrev<CR>", { desc = "Cycle prev buffer" })
+
 -- LSP Keybinds
 wk.register({["<leader>l"] = { name = "+LSP" },})
 vim.keymap.set("n", "<leader>lf", ":lua vim.lsp.buf.format({ timeout_ms = 2000})<CR>", { desc = "Format document [LSP]" })
