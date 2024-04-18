@@ -17,7 +17,7 @@ require("lazy").setup({
     },
     {
     install = {
-    colorscheme = { "rose-pine" },
+    colorscheme = { "colorscheme eldritch" },
   },
   checker = {
     enabled = true,
