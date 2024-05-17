@@ -7,3 +7,4 @@ TODO:
 
 - Shortcut for spellcheck
 - Shortcut for Table plugin
+- better way to kill suggestions so enter does not choose suggestions.
