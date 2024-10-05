@@ -17,6 +17,14 @@ require("lazy").setup({
       { import = "lazyvim.plugins.extras.lang.yaml" },
       { import = "lazyvim.plugins.extras.lang.json" },
       { import = "lazyvim.plugins.extras.lang.terraform" },
+      { import = "lazyvim.plugins.extras.lang.toml" },
+      { import = "lazyvim.plugins.extras.coding.luasnip" },
+      { import = "lazyvim.plugins.extras.dap.core" },
+      { import = "lazyvim.plugins.extras.coding.neogen" },
+      { import = "lazyvim.plugins.extras.ui.mini-indentscope" },
+      { import = "lazyvim.plugins.extras.coding.copilot" },
+      { import = "lazyvim.plugins.extras.coding.copilot-chat" },
+      { import = "lazyvim.plugins.extras.coding.luasnip" },
       { import = "plugins" },
    },
    defaults = {
@@ -28,7 +36,6 @@ require("lazy").setup({
       version = false, -- always use the latest git commit
       -- version = "*", -- try installing the latest stable version for plugins that support semver
    },
-   install = { colorscheme = { "rose-pine" } },
    checker = { enabled = true }, -- automatically check for plugin updates
    performance = {
       rtp = {
