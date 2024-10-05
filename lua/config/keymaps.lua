@@ -15,5 +15,3 @@ vim.keymap.set("n", "<leader>m", ":let @/=''<CR>", { desc = "Cancel search highl
 
 vim.keymap.set("x", "K", ":move '<-2<CR>gv-gv", { desc = "Move selected text up" })
 vim.keymap.set("x", "J", ":move '>+1<CR>gv-gv", { desc = "Move selected text down" })
-
-vim.keymap.set("n", "W", "b", { desc = "Jump back a word" })
