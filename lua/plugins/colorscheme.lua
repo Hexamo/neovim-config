@@ -1,23 +1,6 @@
 return {
    -- add gruvbox
    {
-      "rose-pine/neovim",
-      name = "rose-pine",
-      priority = 1000,
-      config = function()
-         require("rose-pine").setup({
-            variant = "moon",
-            dark_variant = "moon",
-            disable_background = "true",
-            bold_vert_split = false,
-            dim_nc_background = false,
-            disable_float_background = false,
-            disable_italics = false,
-         })
-      end,
-   },
-
-   {
       "rebelot/kanagawa.nvim",
       config = function()
          require("kanagawa").setup({
